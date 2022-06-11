@@ -147,7 +147,7 @@ const Hero = ({ slides }) => {
     if (timeout.current) {
       clearTimeout(timeout.current);
     }
-    setCurrent(current === 0 ? length - 1 : current + 1);
+    setCurrent(current === 0 ? length - 1 : current - 1);
   };
   return (
     <HeroSection>
