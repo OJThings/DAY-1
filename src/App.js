@@ -1,9 +1,14 @@
-import './App.css';
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import GlobalStyle from "./globalStyle";
+import { SliderData } from "./data/SliderData";
 
 function App() {
   return (
     <>
-      <div>bitch</div>
+      <GlobalStyle />
+      <Navbar />
+      <Hero slides={SliderData} />
     </>
   );
 }
