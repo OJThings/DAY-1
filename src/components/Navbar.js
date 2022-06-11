@@ -71,7 +71,7 @@ const NavBtn = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-      <Logo to="/">JEROME</Logo>
+      <Logo to="/">JEROME D</Logo>
       <MenuBars />
       <NavMenu>
         {menuData.map((item, index) => (
