@@ -1,5 +1,6 @@
 import ImageOne from "../images/1.jpg";
 import ImageTwo from "../images/2.jpg";
+
 export const InfoData = {
   heading: "Explore out beautiful homes",
   paragraphOne:
@@ -8,7 +9,7 @@ export const InfoData = {
     "Pellentesque elit eget gravida cum sociis natoque. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Venenatis a condimentum vitae sapien pellentesque habitant morbi. Praesent elementum facilisis leo vel. Netus et malesuada fames ac turpis egestas maecenas. ",
   buttonLabel: "View Homes",
   image: ImageOne,
-  reverse: false,
+  reverse: true,
   delay: 100,
 };
 
