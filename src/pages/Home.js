@@ -1,9 +1,15 @@
-import React from 'react'
+import Hero from "../components/Hero";
+import InfoSection from "../components/InfoSection";
+import { InfoData } from "../data/InfoData";
+import { SliderData } from "../data/SliderData";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <Hero slides={SliderData} />
+      <InfoSection {...InfoData} />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
