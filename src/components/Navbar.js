@@ -30,12 +30,6 @@ const NavLink = css`
     border-radius: 5px;
     transition: all 0.2s ease-out;
   }
-  &:active {
-    background: black;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
 `;
 
 const Logo = styled(Link)`
