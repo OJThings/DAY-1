@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { menuData } from "../data/MenuData";
 import { Button } from "./Button";
 import { FaBars } from "react-icons/fa";
+
 const Nav = styled.nav`
   height: 60px;
   display: flex;
@@ -13,6 +14,7 @@ const Nav = styled.nav`
   position: fixed;
   width: 100%;
   background: transparent;
+
 `;
 
 const NavLink = css`
@@ -23,6 +25,18 @@ const NavLink = css`
   height: 100%;
   cursor: pointer;
   text-decoration: none;
+
+  &:hover {
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+  }
+  &:active {
+    background: black;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
 `;
 
 const Logo = styled(Link)`
@@ -50,6 +64,12 @@ const NavMenu = styled.div`
   align-items: center;
   margin-right: -48px;
 
+  &:active {
+    background: black;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -63,6 +83,12 @@ const NavBtn = styled.div`
   display: flex;
   align-items: center;
   margin-right: 24px;
+  &:active {
+    background: black;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
 
   @media screen and (max-width: 768px) {
     display: none;
