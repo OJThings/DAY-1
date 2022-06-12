@@ -1,13 +1,14 @@
 import React from "react";
 import { Button } from "./Button";
 import Hero from "./Hero";
-import { SliderData } from "../data/SliderData";
+import { SliderDataThree } from "../data/SliderData";
 import {
   Section,
   Container,
   ColumnLeft,
   ColumnRight,
 } from "./InfoSectionElements";
+import Fade from "react-reveal/Fade";
 
 const InfoSection = ({
   heading,
@@ -19,22 +20,24 @@ const InfoSection = ({
 }) => {
   return (
     <>
-      <Section>
-        <Container>
-          <ColumnLeft>
-            <h1>{heading}</h1>
-            <p>{paragraphOne}</p>
-            <p>{paragraphTwo}</p>
-            <Button to="/homes" primary="true">
-              {buttonLabel}
-            </Button>
-          </ColumnLeft>
-          <ColumnRight reverse={reverse}>
-            <img src={image} alt="home" />
-          </ColumnRight>
-        </Container>
-        <Hero slides={SliderData} />
-      </Section>
+      <Fade left>
+        <Section>
+          <Container>
+            <ColumnLeft>
+              <h1>{heading}</h1>
+              <p>{paragraphOne}</p>
+              <p>{paragraphTwo}</p>
+              <Button to="/homes" primary="true">
+                {buttonLabel}
+              </Button>
+            </ColumnLeft>
+            <ColumnRight reverse={reverse}>
+              <img src={image} alt="home" />
+            </ColumnRight>
+          </Container>
+          <Hero slides={SliderDataThree} />
+        </Section>
+      </Fade>
     </>
   );
 };

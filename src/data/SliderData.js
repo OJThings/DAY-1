@@ -47,3 +47,14 @@ export const SliderDataTwo = [
     alt: "House",
   },
 ];
+export const SliderDataThree = [
+  {
+    title: "Badeth T. Dumagsang",
+    price: "$4,280,000",
+    path: "/homes",
+    label: "View resume",
+    image: ImageTwo,
+    alt: "House",
+  },
+];
+
